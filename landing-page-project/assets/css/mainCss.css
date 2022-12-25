@@ -1,0 +1,322 @@
+/* reseting defualt spacing */
+/* 
+main backgroundcolor: #99D98C
+
+text color : #275c62
+
+*/
+/*adding the scroll behavior*/
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: mainFont;
+  color: #275c62;
+}
+/* adding the font */
+@font-face {
+  font-family: mainFont;
+  src: url(/landing-page-project/assets/fonts/Gostring.ttf);
+}
+/* main css */
+/* styling the navbar and logo */
+/* logo styling*/
+.logoSpan {
+  padding: 10px 16px;
+}
+.logo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+/* styling the navbar and links*/
+.navBarDiv {
+  position: sticky;
+  top: 0;
+  display: flex;
+  gap: 200px;
+  background-color: #99d98c;
+  width: 100%;
+  height: 90px;
+  flex: 1fr 2fr;
+}
+.navBar {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  gap: 150px;
+  align-items: center;
+}
+.navBar > li {
+  list-style-type: none;
+}
+a[class="borderClass"] {
+  border-bottom: 2px solid transparent;
+  color: #275c62;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+a:hover {
+  border-color: #275c62;
+}
+/* styling the footer */
+.rights {
+  position: sticky;
+  bottom: 0;
+  background-color: #99d98c;
+  height: 50px;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}
+/* styling the about us section */
+.aboutUsDiv {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/landing-page-project/assets/images/backgroundimages/BACKGROUNDIMAGE-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  background-attachment: fixed;
+}
+.headerH1 {
+  padding-top: 10px;
+  text-align: center;
+}
+.innerContainerAbout {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.aboutText {
+  width: 600px;
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+}
+.aboutImg {
+  width: 600px;
+  height: 400px;
+  font-size: 36px;
+  background-image: url(/landing-page-project/assets/images/about-images-section/box-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+/* styling the contact us section */
+.contactUsDiv {
+  height: 600px;
+  background-color: #99d98c;
+}
+.contactUsH2 {
+  text-align: center;
+  padding-top: 10px;
+}
+/* styling the form inside the contact us section */
+.formContainer {
+  display: flex;
+  width: 650px;
+  height: 500px;
+  box-shadow: 1px 1px 5px 1px #275c62;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.formContainer > form {
+  margin: 0 auto;
+}
+.formContainer > form > input[class="dataInput"] {
+  display: block;
+  width: 400px;
+  height: 50px;
+  margin-top: 35px;
+  font-size: 24px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+.formContainer > form > input[class="dataInput"]:focus {
+  border-color: #275c62;
+}
+.formContainer > form > input[class="dataInput"]:nth-of-type(4) {
+  height: 70px;
+}
+/* this removes the arrows from the number type input */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type="submit"] {
+  width: 400px;
+  height: 50px;
+  font-size: 24px;
+  border: none;
+  background-color: #99d98c;
+  margin-top: 25px;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px #275c62;
+}
+input[type="submit"]:hover {
+  color: #99d98c;
+  background-color: #275c62;
+}
+/* styling the our boxes section */
+.ourBoxesDiv {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/landing-page-project/assets/images/backgroundimages/backgroundimage-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  background-attachment: fixed;
+}
+.boxesContainer {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.boxItem {
+  margin-top: 70px;
+  width: 450px;
+  height: 450px;
+  background-color: #99d98c;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.boxImage {
+  width: 450px;
+  height: 230px;
+}
+
+.contentUl {
+  list-style-type: none;
+  padding: 8px 16px;
+  font-size: 22px;
+}
+.contentUl > li {
+  padding-top: 10px;
+}
+.contentUl > li > strong {
+  margin-left: 10px;
+}
+.contentUl > li:nth-of-type(5) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contentUl > li > button {
+  border: none;
+  padding: 8px 16px;
+  font-size: 20px;
+  background-color: #99d98c;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px #275c62;
+}
+.contentUl > li > button:hover {
+  color: #99d98c;
+  background-color: #275c62;
+}
+/* styling the why choose us section */
+.WhyChooseUsDiv {
+  height: 600px;
+  background-color: #99d98c;
+}
+.whyChooseUsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 5px 1px #275c62;
+  width: 600px;
+  height: 350px;
+
+  margin: 60px auto;
+  font-size: 24px;
+}
+.whyChooseUsContent > P {
+  padding: 8px 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+.WhyChooseUsDiv > h2 {
+  padding-top: 10px;
+  text-align: center;
+}
+/* styling the new on boxit section */
+.newOnBoxitDiv {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/landing-page-project/assets/images/backgroundimages/backgoundimage-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  background-attachment: fixed;
+}
+.newOnBoxitDiv > h2 {
+  text-align: center;
+  padding-top: 10px;
+}
+.newOnBoxItitem {
+  width: 1000px;
+  height: 400px;
+  background-color: #99d98c;
+  display: flex;
+
+  margin: 60px auto;
+  border-radius: 10px;
+}
+.newOnBoxItImage {
+  width: 400px;
+  height: 400px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.newOnBoxItH2 {
+  padding-left: 250px;
+  padding-top: 10px;
+}
+.textBoxItem > .newContentUl {
+  list-style-type: none;
+  padding: 32px 64px;
+  line-height: 2;
+  font-size: 24px;
+}
+.newContentUl > li > button {
+  border: none;
+  padding: 8px 16px;
+  font-size: 20px;
+  background-color: #99d98c;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px #275c62;
+  margin-left: 200px;
+  margin-top: 40px;
+}
+.newContentUl > li > button:hover {
+  color: #99d98c;
+  background-color: #275c62;
+}
